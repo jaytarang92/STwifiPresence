@@ -16,6 +16,8 @@ Open the Smartthings APP and install the 'AsusWrt Wifi Presence'app to presence 
 ### Router Config ###
 Install opkg/ipkg on router and install python..google specific instructions for your router<br/>
 https://github.com/Entware/entware<br/>
+After Installation run : opkg install python, python-pip && pip install requests
+**optional write the appID ,token, and mac to the environment profile is at '/opt/etc/profile' then source /opt/etc/profile
 wget/curl this python file to device and run it.<br/> 
   
 # Thanks 
