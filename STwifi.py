@@ -39,14 +39,13 @@ class Smartthings:
              self.state = "away"
              stat = "not present"
              print "Status: Not Present(Away)"
-             self.url = "https://graph-na02-useast1.api.smartthings.com/api/smartapps/installations/%s/Phone/%s?access_token=%s" % (self.appID, self.state, self.aToken)
 
         if cmd == 0:
             self.state = "home"
             stat = "present"
             print "Status: Present(Home)"
-            self.url = "https://graph-na02-useast1.api.smartthings.com/api/smartapps/installations/%s/Phone/%s?access_token=%s" % (self.appID, self.state, self.aToken)
-
+    
+        self.url = "https://graph-na02-useast1.api.smartthings.com/api/smartapps/installations/%s/Phone/%s?access_token=%s" % (self.appID, self.state, self.aToken)
         '''
         GETS THE STATUS FROM SMARTTHINGS
         IF THE SAME DOES NOTHING :)
